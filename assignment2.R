@@ -1,8 +1,3 @@
-setwd('C:/Users/rubind1/Documents/Coursera-R')
-##
-## I simply set the input x as a matrix
-## and then set the solved value "s" as a null
-## then I changed every reference to "mean" to "solve"
 makeCacheMatrix <- function(x = matrix(sample(1:100,9),3,3)) {
   s <- NULL
   set <- function(y) {
@@ -16,8 +11,6 @@ makeCacheMatrix <- function(x = matrix(sample(1:100,9),3,3)) {
        setsolve = setsolve,
        getsolve = getsolve)
 }
-##
-## Same here, changed "mean" to "solve" and "m" to "s"
 cacheSolve <- function(x, ...) {
   s <- x$getsolve()
   if(!is.null(s)) {
